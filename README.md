@@ -107,6 +107,10 @@ movie-recommender/
 ├── data/
 ├── models/
 ├── notebooks/
+│   ├── 01_professional_notebook.ipynb
+│   ├── 02_hyperparam_tuning.ipynb
+│   ├── 03_latent_viz.ipynb
+│   └── 04_new_notebook.ipynb      # ← added file
 ├── src/
 │   ├── data_loader.py
 │   ├── matrix_factorization.py
@@ -116,6 +120,7 @@ movie-recommender/
 ├── app.py
 ├── requirements.txt
 └── README.md
+
 
 # Implementation Notes
 # Matrix Factorization Model
