@@ -1,5 +1,15 @@
 # 🎬 Movie Recommender — Matrix Factorization (From Scratch)
 
+<p align="left">
+  <img src="https://img.shields.io/github/repo-size/punith624/movie-recommender" />
+  <img src="https://img.shields.io/github/languages/top/punith624/movie-recommender" />
+  <img src="https://img.shields.io/badge/python-3.8%2B-blue" />
+  <img src="https://img.shields.io/github/last-commit/punith624/movie-recommender" />
+  <img src="https://img.shields.io/github/issues/punith624/movie-recommender" />
+  <img src="https://img.shields.io/github/license/punith624/movie-recommender" />
+</p>
+
+
 A clean, portfolio-ready implementation of a Matrix Factorization-based movie recommender trained on MovieLens-100K. Includes from-scratch SGD optimization, user/item biases, evaluation, hyperparameter tuning, and latent-factor visualization (PCA & t-SNE). Comes with polished notebooks and a Streamlit demo for interactive recommendations.
 
 ---
