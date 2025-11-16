@@ -65,27 +65,32 @@ python -m venv venv
 pip install -r requirements.txt
 
 
-▶️ Usage
-1️⃣ Train the model
-python main.py --train --k 30 --lr 0.007 --reg 0.02 --epochs 30
+## Usage 
 
-2️⃣ Launch the Streamlit app
+**Train the model**
+
+```bash
+python main.py --train --k 30 --lr 0.007 --reg 0.02 --epochs 30
+```
+
+
+# Launch the Streamlit App
 streamlit run app.py
 
 
-Open the browser:
+# Open in your browser:
 👉 http://localhost:8501
 
-3️⃣ Run notebooks
+# Run the Jupyter Notebooks
 
 Open the .ipynb files in the notebooks/ directory.
 
-📘 Notebooks
+## Notebooks
 Notebook	Description
 01_professional_notebook.ipynb	Full walkthrough: math, EDA, MF training, evaluation
 02_hyperparam_tuning.ipynb	Grid search for k, learning rate, regularization
 03_latent_viz.ipynb	PCA & t-SNE visualization of latent factors
-🗂 Project Structure
+# Project Structure
 movie-recommender/
 ├── assets/
 │   └── demo.png
@@ -102,9 +107,10 @@ movie-recommender/
 ├── requirements.txt
 └── README.md
 
-🧠 Implementation Notes
+# Implementation Notes
+# Matrix Factorization Model
 
-Matrix Factorization model:
+The predicted rating is:
 
 𝑟
 ^
@@ -147,27 +153,79 @@ i
 	​
 
 
-Optimization: SGD with L2 regularization
+Where:
 
-Evaluation: RMSE on train + validation
+𝜇
+μ: global mean
 
-Visualization: PCA (global structure), t-SNE (local grouping)
+𝑏
+𝑢
+b
+u
+	​
 
-🎨 Presentation Tips
+: user bias
 
-Show RMSE curves for model quality
+𝑏
+𝑖
+b
+i
+	​
 
-Explain MF formula: global mean + biases + latent dot product
+: item bias
 
-Present Top-N recommendations for common users
+𝑝
+𝑢
+p
+u
+	​
 
-Show PCA/t-SNE scatterplots grouped by movie genres
+, 
+𝑞
+𝑖
+q
+i
+	​
 
-Mention training time (approx. 3 minutes on MovieLens-100K)
+: latent factor vectors
 
-Highlight modular code design in src/
+ # Optimization
 
-📄 .gitignore (Recommended)
+SGD with L2 regularization
+
+Optionally shuffle per epoch
+
+Supports mini-batch extension
+
+# Evaluation Metrics
+
+RMSE for both train and validation
+
+Logged and plotted per epoch
+
+# Visualization
+
+PCA → global structure of the latent space
+
+t-SNE → clustering of similar movies
+
+Helps interpret genre patterns & similarities
+
+## Presentation Tips
+
+Show RMSE vs Epochs to demonstrate training stability
+
+Briefly explain the MF formula (bias terms + dot product)
+
+Present Top-N recommendations for a user
+
+Include PCA / t-SNE scatterplots
+
+Mention training time (~3 min on ML-100K)
+
+Highlight modular Python architecture
+
+## Recommended .gitignore
 venv/
 __pycache__/
 *.pyc
@@ -175,13 +233,16 @@ data/
 models/
 .env
 
-🤝 Contributing
+ ## Contributing
 
-Feel free to open issues or submit pull requests!
+Pull requests and suggestions are welcome!
 
-📬 Contact
+### Contact
 
 Punith Kumar
 GitHub: https://github.com/punith624
 
 Email: kumarpunith6864@gmail.com
+
+
+
