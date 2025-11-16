@@ -65,3 +65,123 @@ python -m venv venv
 pip install -r requirements.txt
 
 
+▶️ Usage
+1️⃣ Train the model
+python main.py --train --k 30 --lr 0.007 --reg 0.02 --epochs 30
+
+2️⃣ Launch the Streamlit app
+streamlit run app.py
+
+
+Open the browser:
+👉 http://localhost:8501
+
+3️⃣ Run notebooks
+
+Open the .ipynb files in the notebooks/ directory.
+
+📘 Notebooks
+Notebook	Description
+01_professional_notebook.ipynb	Full walkthrough: math, EDA, MF training, evaluation
+02_hyperparam_tuning.ipynb	Grid search for k, learning rate, regularization
+03_latent_viz.ipynb	PCA & t-SNE visualization of latent factors
+🗂 Project Structure
+movie-recommender/
+├── assets/
+│   └── demo.png
+├── data/
+├── models/
+├── notebooks/
+├── src/
+│   ├── data_loader.py
+│   ├── matrix_factorization.py
+│   ├── recommend.py
+│   └── evaluation.py
+├── main.py
+├── app.py
+├── requirements.txt
+└── README.md
+
+🧠 Implementation Notes
+
+Matrix Factorization model:
+
+𝑟
+^
+𝑢
+𝑖
+=
+𝜇
++
+𝑏
+𝑢
++
+𝑏
+𝑖
++
+𝑝
+𝑢
+⊤
+𝑞
+𝑖
+r
+^
+ui
+	​
+
+=μ+b
+u
+	​
+
++b
+i
+	​
+
++p
+u
+⊤
+	​
+
+q
+i
+	​
+
+
+Optimization: SGD with L2 regularization
+
+Evaluation: RMSE on train + validation
+
+Visualization: PCA (global structure), t-SNE (local grouping)
+
+🎨 Presentation Tips
+
+Show RMSE curves for model quality
+
+Explain MF formula: global mean + biases + latent dot product
+
+Present Top-N recommendations for common users
+
+Show PCA/t-SNE scatterplots grouped by movie genres
+
+Mention training time (approx. 3 minutes on MovieLens-100K)
+
+Highlight modular code design in src/
+
+📄 .gitignore (Recommended)
+venv/
+__pycache__/
+*.pyc
+data/
+models/
+.env
+
+🤝 Contributing
+
+Feel free to open issues or submit pull requests!
+
+📬 Contact
+
+Punith Kumar
+GitHub: https://github.com/punith624
+
+Email: kumarpunith6864@gmail.com
