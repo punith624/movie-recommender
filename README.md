@@ -11,7 +11,7 @@
 ---
 
 # Quick demo / Screenshot
-![Project Screenshot](assets/demo.png)
+Screenshot 2025-11-12 233725.png
 
 
 ---
