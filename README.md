@@ -1,4 +1,4 @@
-# Movie Recommender — Matrix Factorization (From Scratch)
+# 🎬 Movie Recommender — Matrix Factorization (From Scratch)
 
 [![Repo Size](https://img.shields.io/github/repo-size/punith624/movie-recommender)](https://github.com/punith624/movie-recommender)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
@@ -10,8 +10,8 @@
 
 ---
 
-# Quick demo / Screenshot
-Screenshot 2025-11-12 233725.png
+## 📸 Quick Demo / Screenshot
+![Project Screenshot](assets/Screenshot 2025-11-12 233725.png)
 
 
 ---
