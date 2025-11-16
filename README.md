@@ -11,9 +11,8 @@
 ---
 
 # Quick demo / Screenshot
-*(Replace the image with your own screenshot saved in `/assets/` or `/docs/`)*
+![Project Screenshot](assets/demo.png)
 
-![Project Screenshot](assets/screenshot-placeholder.png)
 
 ---
 
